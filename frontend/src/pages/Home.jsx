@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Carousel from 'react-bootstrap/Carousel';
 
 export default function Home() {
   const [blogs, setBlogs] = useState([]);
@@ -17,6 +18,43 @@ export default function Home() {
        
       <div className='text1'>
         <h2 className='my-5'>Welcome to the Fitness Blog!</h2>
+        <Carousel>
+      <Carousel.Item interval={2000}>
+        <img
+          className="d-block w-100"
+          src="https://e0.pxfuel.com/wallpapers/63/653/desktop-wallpaper-fitness-gym-boy.jpg"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>“Take care of your body. It’s the only place you have to live."</h3>
+          {/* <p></p> */}
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={2000}>
+        <img
+          className="d-block w-100"
+          src="https://rukminim1.flixcart.com/image/850/1000/xif0q/poster/f/g/c/large-pos00256-no-pain-no-gain-gym-exercise-poster-with-frame-original-imaghr7gvybbhmhb.jpeg?q=90"
+          alt="Second slide"
+        />
+        <Carousel.Caption>
+          <h3>“Once you are exercising regularly, the hardest thing is to stop it.” </h3>
+          <p></p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={2000}>
+        <img
+          className="d-block w-100"
+          src="https://wallpaperaccess.com/full/1087579.jpg"
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h3>“Exercise should be regarded as tribute to the heart” </h3>
+          {/* <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p> */}
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
 
         <h3 className='my-3'> Current Best Workout Plans</h3>
         <p className='my-5'>Here you will find the latest workout plans to help you achieve your fitness goals.</p>
